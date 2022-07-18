@@ -56,6 +56,10 @@ img[alt="logo"] {
   font-family: "Poppins", sans-serif;
 }
 
+.list-item:hover {
+  cursor: pointer;
+}
+
 .list-item:first-child {
   padding-left: 0;
 }
