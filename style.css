@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* => NAVBAR */
+
+section[aria-label="navbar"] {
+  flex-basis: 9%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  background-color: black;
+  color: white;
+  padding: 0 2rem;
+  margin-bottom: 0;
+}
+
+.navbar > div:first-child {
+  flex-basis: 10%;
+}
+
+img[alt="logo"] {
+  width: 60%;
+}
+
+.line {
+  flex-basis: 1%;
+  /* border-right: 1px solid white; */
+  height: 6vh;
+  border-left: 1px solid white;
+  margin: 0.75rem 0;
+}
+
+.grow-list {
+  flex-basis: 75%;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+}
+
+.list-item {
+  padding: 0 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.list-item:first-child {
+  padding-left: 0;
+}
+
+.list-item:first-child::after {
+  content: "v";
+  margin-left: 0.5rem;
+  font-size: 0.6rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar > div:last-child {
+  flex-basis: 14%;
+}
+
+button {
+  color: white;
+  background-color: #d900ff;
+  border-radius: 7.5px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.button-small {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+/* => HERO */
+
+section[aria-label="hero"] {
+  flex-basis: 91%;
+  background-image: url(./assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-heading {
+  /* flex-basis: 40%; */
+  /* align-self: flex-end; */
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+.hero-description {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.button-large {
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  word-spacing: 4px;
+}
